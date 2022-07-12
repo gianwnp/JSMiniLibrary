@@ -134,7 +134,7 @@ hr {
   margin: auto;
   position: relative;
   left: 120px;
-  /* transition: 0.5s; */
+  padding-bottom: 200px;
 }
 
 .status-logo, .remove-item {

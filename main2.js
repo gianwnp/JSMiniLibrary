@@ -210,18 +210,6 @@ removeItemButtons.forEach(function (button, i, arr) {
   });
 })
 
-// user input. what happen?
-// 1. create new obj (done it before.)
-// 2. push new obj to myLibrary array (done it before)
-// 3. set new item with a key that contain myLibrary arry (inget ubah format dulu)
-// 4. reload page
-
-// what happen after load page?
-// 1. condition: myLibrary is empty. so,
-// 2. retrieve data from local storage
-// 3. convert back to JSON, and push the value to myLibrary
-// 4. display all the information in the doc.
-
 // Get the modal
 var modal = document.getElementById("myModal");
 
