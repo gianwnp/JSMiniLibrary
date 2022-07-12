@@ -1,0 +1,276 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:#F7F7F7;
+}
+
+#book-list {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 70%;
+  margin:auto;
+}
+
+#info-list-total-books {
+  background-color: #606060;
+  font-size: 20px;
+  padding: 10px;
+  width: 70%;
+  border-radius: 40px;
+  text-align: center;
+  margin: 0;
+}
+
+hr {
+  border: 1px solid #bbb;
+  width: 75%;
+}
+
+.info-list {
+  color: white;
+  list-style-type: none;
+  margin: 10px;
+  font-size: 19px;
+  display: inline-block;
+}
+
+.logo-text {
+  font-family:'Times New Roman', Times, serif;
+  color: #f1f1f1;
+  text-align: center;
+  size: 1.5em;
+}
+
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sidenav a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidenav-section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.form-title, .big-title {
+  text-align: center;
+}
+
+.container { 
+  height: 200px;
+}
+
+.vertical-center {
+  margin-top: 70px;
+}
+
+.sort {
+  background-color: #424242;
+  color: #f1f1f1;
+  border-radius: 8px;
+  padding: 10px 20px;
+  border: none;
+  text-align: center;
+  margin-left: 150px;
+  margin-bottom: 10px;
+}
+
+#searchInput {
+  width: 30%;
+  position: relative;
+  left: 288px;
+  border-color: #111;
+}
+
+.table-and-btn-display-container {
+  width: 70%;
+  margin: auto;
+  position: relative;
+  left: 120px;
+  /* transition: 0.5s; */
+}
+
+.status-logo, .remove-item {
+  width: 16px;
+  height: 16px;
+}
+
+.status-logo {
+  margin-right: 6px;
+}
+
+.status-logo-info {
+  width: 22px;
+  margin-top: 4px;
+}
+
+.link-remove-item {
+  margin: auto;
+}
+
+.aligned {
+  position: relative;
+  bottom: 2px;
+}
+
+td, th {
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+td:nth-child(6), th:nth-child(6), td:nth-child(1) {
+  text-align: center;
+}
+
+tr:hover {background-color: #ddd;}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #121212;
+  color: white;
+}
+
+#input-book-form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  margin: auto;
+  padding: 20px;
+  width: 50%;
+}
+
+input[type=text], input[type=submit] {
+  width: 100%;
+  margin: 8px 0;
+}
+
+input[type=text] {
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  background-color: #424242;
+  color: #f1f1f1;
+  cursor: pointer;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 4px;
+}
+
+#btn-display-form {
+  text-align: center;
+  margin-left: 0;
+  background-color: #111; 
+}
+
+#btn-display-form:hover {
+  color:#f1f1f1;
+  transition: 0.5s;
+}
+
+input[type=submit]:hover, .sort:hover{
+  background-color: #121212;
+}
+
+.container {
+  margin: auto;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  /* visibility: hidden; */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  margin: auto;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+.info-value {
+  font-size: 18px;
+  position: relative;
+  bottom: 5px;
+  left: 2px;
+} 

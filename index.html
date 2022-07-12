@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Personal Library App</title>
+    <!-- Import Google Icon Font -->
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <!--Import materialize.css-->
+    <!-- <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/> -->
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+  <div id="mySidenav" class="sidenav">
+    <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+    <div class="sidenav-section">
+      <h1 class="logo-text">MyLibrary</h1>
+    </div>
+    <hr>
+    <div class="sidenav-section">
+      <a href="#" id="btn-display-form"> + Add book item</a>
+    </div>
+    <hr>
+    <div class="sidenav-section">
+      <ul class="book-info"></ul>
+    </div>
+  </div>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+  <div class="container">
+    <div class="vertical-center">
+      <div class="table-and-btn-display-container">
+        <h1 class="big-title">Your Personal Library App</h1><br>
+        <button class="sort"><img src="img/sort-alt-free-icon-font.png" style="width: 11px; height: 11px"> by name</button>
+        <input type="text" name="Search " id="searchInput" placeholder="Search by title, author, etc...">
+        <table id="book-list">
+          <th>No</th>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Pages</th>
+          <th>Read Status</th>
+          <th>Action</th>
+          <tr></tr>
+        </table>
+      </div>
+  </div>
+    </div>
+  </div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+    </div>
+    <div class="modal-body">
+      <form action="" method="" id="input-book-form">
+        <h2 class="form-title">Add New Book</h2>
+          <div id="title">
+            <label for="title">Title: </label>
+            <input type="text" name="title" id="input-title" required>
+          </div>
+          <div id="author">
+            <label for="author">Author: </label>
+            <input type="text" name="author" id="input-author" required>
+          </div>
+          <div id="pages">
+            <label for="pages">Number of Pages: </label>
+            <input type="text" name="pages" id="input-pages" required>
+          </div>
+          <div id="status">
+            <label>Status Read: </label>
+            <input type="radio" id="not-started-reading" class="radio" name="status" value="Not Started">
+            <label for="not-started-reading">Not Started</label>
+            <input type="radio" id="currently-reading" class="radio" name="status" value="Reading">
+            <label for="currently-reading">Reading</label>
+            <input type="radio" id="completed-reading" class="radio" name="status" value="Completed">
+            <label for="completed-reading">Completed</label>
+          </div>
+          <div id="btn-submit">
+            <input type="submit" value="Add New Book">
+          </div>
+        </form>
+    </div>
+  </div>
+</div>
+  <!--JavaScript at end of body for optimized loading-->
+  <script src="main2.js"></script>
+  <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+remove.png
+<a href="https://www.flaticon.com/free-icons/delete" title="delete icons">Delete icons created by Pixel perfect - Flaticon</a>
+
+power-on.png
+<a href="https://www.flaticon.com/free-icons/power" title="power icons">Power icons created by Uniconlabs - Flaticon</a>
+
+check.png
+<a href="https://www.flaticon.com/free-icons/check" title="check icons">Check icons created by hqrloveq - Flaticon</a>
+
+open-book.png
+<a href="https://www.flaticon.com/free-icons/book" title="book icons">Book icons created by Freepik - Flaticon</a>
